@@ -53,3 +53,14 @@ Differences between `aasyn` and `defer`.
 | Execution sequence | Loads the scripts while HTML is being rendered. When scripts are loaded, then HTML rendering stops and execution of script starts. When execution is completed, HTML rendering resumes.  | Loads the scripts while HTML is being rendered. Executes the scripts only after the HTML is completely rendered.
 |       |      |       |
 
+## Q 5. Why react is called React?
+
+React was developed for applications (Facebook) that have constantly changing data. Since React is a front-end framework or the “View” in MVC, this means that as the user clicks around and changes the app’s data, the view should “react” or change with those user events. User events being mouse clicks, typing, submitting a form.
+
+## Q 6. Difference between React and React DOM
+
+React is used to create views while React Dom is used to render components in the web UI.
+
+## Q 7. What is difference between react.development.js and react.production.js files via CDN?
+
+`react.development.js` is used for development purpose and the code is not compressed while `react.production.js` is used for production purposes and the code for this library is compressed.
