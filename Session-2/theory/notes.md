@@ -96,11 +96,11 @@ npm install -D parcel
 
 - For development build:
 ```
-npm parcel <entry_point> 
+npx parcel <entry_point> 
 ```
 - For production build :
 ```
-npm parcel build <entry_point> 
+npx parcel build <entry_point> 
 ```
 
 # 4. Why react is fast?
