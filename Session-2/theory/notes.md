@@ -110,5 +110,6 @@ It is not only the virtual DOM that makes React faster but other components like
 # 5. Transitive dependencies:
 It is a type of dependency where one dependency requires another dependency to work properly and another dependency requires an another dependecy.
 
-
+# 6. devDependencies vs dependency :
+A dependency is a library that a project needs to function effectively. DevDependencies are the packages a developer needs during development.
 
