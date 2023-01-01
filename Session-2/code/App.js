@@ -15,7 +15,7 @@
  * port Number
  * Consistent hashin algorithm
  * Zero Config
- *
+ * Tree Shaking - Removing un-wanted code.
  *
  */
 import React from "react";
