@@ -113,3 +113,34 @@ It is a type of dependency where one dependency requires another dependency to w
 # 6. devDependencies vs dependency :
 A dependency is a library that a project needs to function effectively. DevDependencies are the packages a developer needs during development.
 
+# 7. What is Tree Shaking?
+Tree shaking is process of removing the unwanted code that we do not use while developing the application
+
+# 8. What is `Parcel/Webpack`? Why do we need it?
+Parcel/Webpack are type of bundlers that we use to power our application with different type functionalities and features.
+
+Some of the features that they have:
+  
+  1. Image optimization - Optimize the images for frontend   
+  2. Minification - minify the code 
+  3. HMR (Hot module replacement) uses file watcher algorithms - They  keep track of the changes made while developing the application and renders them on the web UI.
+  4. Code cleaning 
+  5. 
+
+# 9. What is `npx` ?
+`npx` is a tool that is used to execute the packages registered on the `npm` registry without installin them.
+
+
+# 10. What is `.parcel-cache`?
+`.parcel-cache` is used by parsel to reduce the building time. `.parcel-cache` contains the imformation about the project so that it can reduce the building time if we rebuild the application again.
+
+# 11. What is `.gitignore`? What should we add and not add into it?
+This file contains the list of  files that we should not commit to the repository.
+
+
+# 12. Why should I not modify `package-lock.json`?
+`package-lock.json` file contains the information about the dependencies and their versions  used in the project. Deleting it would cause depencies issues in the production environment.
+
+# 13. What is the `dist` folder?
+`dist` folder is created when parcel creates the build for the application . It contains the HTML and CSS and JS with other files  for the build.
+
