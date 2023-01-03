@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.header{
+    background-color:#7446a9;
+    height: 70px;
+    padding:25px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+#logo, #icon {
+    cursor:pointer;
+    flex-grow: 1;
+    text-align:center;
+}
+.logo, .icon{
+    width:2rem;
+    height:2rem;
+}
+.icon{
+    color:#fff;
+}
+#search {
+    flex-grow:2;
+}
+.search {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    outline:none;
+    border:2px solid transparent;
+    border-radius:2rem;
+}
+.search:focus{
+    transition:.5s ease-in;
+    border:2px solid rgb(87, 35, 198);
+}
+
