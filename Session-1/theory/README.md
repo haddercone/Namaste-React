@@ -1,3 +1,4 @@
+# Theory Assignment
 ## Q 1.  What is **emmet**?
 
 Emmet is a plugin for text editors like VS Code that allows users to code faster.
