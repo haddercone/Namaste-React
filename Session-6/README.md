@@ -8,4 +8,6 @@
 - CORS
 - Optional chaining
 
-Application: [here](https://snazzy-mandazi-bfef1b.netlify.app/)
+> **Note:** **_Please enable CORS on your browser before accessing the application. Download the [Allow CORS](https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?hl=en) extension._**
+
+### **Application: [here](https://snazzy-mandazi-bfef1b.netlify.app/)**
