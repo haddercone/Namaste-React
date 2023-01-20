@@ -1,4 +1,4 @@
-# Session 5 of Namaste React course:
+# Session 6 of Namaste React course:
 
 ## Topics covered in this session:
 
