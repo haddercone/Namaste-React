@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { IMAGE_CDN_URL } from "../config";
-FontAwesomeIcon;
+
 const RestrauntCard = ({
   name,
   cloudinaryImageId,
