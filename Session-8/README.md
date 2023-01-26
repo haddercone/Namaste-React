@@ -1,4 +1,4 @@
-# Session 7 of Namaste React course:
+# Session 8 of Namaste React course:
 
 ## Topics covered in this session:
 
