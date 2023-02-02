@@ -13,6 +13,7 @@ A component suspended while responding to synchronous input. This will cause the
 How does suspense fix this error ?
 
 <p style="color: orange; font-weight:bold;">: TODO :</p>
+
 ## 4. Advantages and disadvantages of using this code splitting pattern?
 
 | Advatage                                                                                                                                                                                                                                                      | Disadvatage                                                                                                              |
