@@ -183,9 +183,7 @@ body{
     0%     {background-color:#ddd;}
     50.0%  {background-color:#f4f4f4;}
     100.0%  {background-color:#ddd;}
-    /* 0%     {background:linear-gradient(90deg, #ddd,#fff,#ddd);}
-    50.0%  {background:linear-gradient(90deg, #fff,#ddd,#fff);}
-    100.0%  {background:linear-gradient(90deg, #ddd,#fff,#ddd);} */
+z
 }
 .footer {
     text-align:center;
