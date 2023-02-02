@@ -55,6 +55,9 @@ const RestaurantMenu = () => {
               <div className="item">
                 <div className="item-description">
                   <p className="item-name">{item?.name}</p>
+                  <p style={{ fontWeight: "bold" }}>
+                    ₹ {Math.floor(item?.price) / 100}
+                  </p>
                   <p className="item-description">{item?.description}</p>
                 </div>
                 <div className="item-image">
