@@ -1,12 +1,15 @@
+import { Suspense, lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import Error from "../components/Error";
 import Body from "../components/Body";
-import About from "../components/About";
 import Profile from "../components/ProfileClassComponent";
 import Contact from "../components/Contact";
 import Cart from "../components/Cart";
 import RestaurantMenu from "../components/RestaurantMenu";
 import AppLayout from "../components/AppLayout";
+import Shimmer from "../components/Shimmer";
+
+const About = lazy(() => import("../components/About"));
 
 const useRoute = () => {
   const appRoute = createBrowserRouter([
@@ -21,7 +24,11 @@ const useRoute = () => {
         },
         {
           path: "/about",
-          element: <About />,
+          element: (
+            <Suspense fallback={<Shimmer />}>
+              <About />
+            </Suspense>
+          ),
           children: [
             {
               path: "profile",
