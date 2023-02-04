@@ -21,6 +21,7 @@ body{
     background-color: var(--primary-color);
     color: #fff;
     padding:1.2rem;
+    position:relative;
     justify-content: space-between;
 }
 .nav-items ul{
@@ -52,6 +53,7 @@ body{
     color: #fff;
     font-size: 1.1rem;
     outline: none;
+    position:relative;
     border: none;
     background-color: #023433;
 } 
@@ -60,6 +62,15 @@ body{
     background-color: #fff;
     color: #023433;
     cursor: pointer;
+}
+.status {
+    position : absolute;
+    width:15px;
+    height:15px;
+    border-radius:50%;
+    right:12px;
+    top:24%;
+    z-index:2;
 }
 .crousel {
     display:flex;
@@ -183,7 +194,7 @@ body{
     0%     {background-color:#ddd;}
     50.0%  {background-color:#f4f4f4;}
     100.0%  {background-color:#ddd;}
-z
+
 }
 .footer {
     text-align:center;
