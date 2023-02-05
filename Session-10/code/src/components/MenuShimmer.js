@@ -2,7 +2,7 @@ const MenuShimmer = () => {
   return (
     <>
       <div className=" animate-pulse h-72 py-8 mb-5">
-        <div className="m-auto w-4/5 flex justify-evenly items-center">
+        <div className="m-auto w-4/5 flex justify-evenly items-center gap-5">
           <div className="w-96 h-52 bg-gray-400"></div>
 
           <div className="w-1/3">

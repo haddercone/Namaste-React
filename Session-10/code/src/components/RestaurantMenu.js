@@ -21,7 +21,7 @@ const RestaurantMenu = () => {
     <>
       {/* #3C4852  primary - #174d44*/}
       <div className="bg-[#3C4852] text-white py-8 mb-5">
-        <div className="m-auto w-4/5 flex justify-evenly items-center">
+        <div className="m-auto w-4/5 flex justify-evenly items-center gap-5">
           <div>
             <img
               className="w-96"
