@@ -8,7 +8,7 @@ const Head = () => {
   const handleLogin = () => setIsLogged(!isLogged);
   const isOnline = useOnline();
   return (
-    <div className="sticky top-0 bg-green-100 shadow-md">
+    <div className="sticky top-0 bg-white z-10 shadow-md">
       <div className="p-3  w-4/5 m-auto flex justify-between items-center">
         <Title />
         <div>

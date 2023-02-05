@@ -8,7 +8,6 @@ import Shimmer from "./Shimmer";
 const Body = () => {
   const [restaurants, actualData, crouselCards, isLoaded, setRestaurants] =
     useRestaurantList();
-  console.log(isLoaded);
   return (
     <>
       {/* <Crousel crouselCards={crouselCards} /> */}

@@ -9,19 +9,19 @@ const Search = ({ restaurants, actualData, setRestaurants }) => {
     <div className="w-4/5 m-auto py-3 flex justify-between items-center ">
       <p className="text-2xl">{restaurants.length} restaurants</p>
       <form
-        className="w-1/2 px-3 py-2 text-2xl text-right"
+        className="w-1/2 px-3 py-2 text-2xl text-right "
         onSubmit={(e) => e.preventDefault()}
       >
         <input
           type="text"
-          className="p-2 border-2 w-3/4 outline-none border-gray-600 border-r-0"
+          className="p-2 border-2 w-3/4 border-gray-500 outline-none  border-r-0 "
           placeholder="Search restaurants.."
           autoFocus={true}
           onChange={(e) => setSearchText(e.target.value)}
           value={searchText}
         />
         <button
-          className="px-3 py-2 border-2  border-gray-600 hover:bg-green-100"
+          className="px-3 py-2 border-2  border-gray-500 bg-black text-white hover:bg-white hover:text-black "
           onClick={() => {
             const data = filteredRestaurants(searchText, actualData);
             setRestaurants(data);
