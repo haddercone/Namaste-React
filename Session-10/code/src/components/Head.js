@@ -2,6 +2,8 @@ import { useState } from "react";
 import Title from "./Title";
 import { Link } from "react-router-dom";
 import useOnline from "../utils/useOnline";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 const Head = () => {
   const [isLogged, setIsLogged] = useState(false);
@@ -11,39 +13,42 @@ const Head = () => {
     <div className="sticky top-0 bg-white z-10 shadow-md">
       <div className="p-3  w-4/5 m-auto flex justify-between items-center">
         <Title />
-        <div>
-          <ul className="h-full flex justify-between gap-5 text-xl">
-            <Link to="/">
-              <li className="px-3 py-2">Home</li>
-            </Link>
 
-            <Link to="/about">
-              <li className="px-3 py-2">About</li>
-            </Link>
+        <ul className="h-full flex justify-between gap-5 text-xl">
+          <Link to="/">
+            <li className="px-3 py-2">Home</li>
+          </Link>
 
-            <Link to="/contact">
-              <li className="px-3 py-2">Contact</li>
-            </Link>
+          <Link to="/about">
+            <li className="px-3 py-2">About</li>
+          </Link>
 
-            <Link to="/cart">
-              <li className="px-3 py-2">Cart</li>
-            </Link>
+          <Link to="/contact">
+            <li className="px-3 py-2">Contact</li>
+          </Link>
+        </ul>
 
-            <li className="px-3 py-2 bg-black transition duration-0 text-white hover:bg-white hover:text-black hover:duration-150">
-              <div
-                className=""
-                style={
-                  isOnline
-                    ? { backgroundColor: "lightgreen" }
-                    : { backgroundColor: "gray" }
-                }
-              ></div>
-              <button className="w-20" onClick={handleLogin}>
-                {isLogged ? "Logout" : "Login"}
-              </button>
+        <ul className="h-full flex justify-between gap-5 text-xl ">
+          <Link to="/cart">
+            <li className="px-3 py-2  text-gray-700">
+              <FontAwesomeIcon icon={faCartShopping} />
             </li>
-          </ul>
-        </div>
+          </Link>
+
+          <li className="px-3 py-2 bg-gray-700 border-2  transition duration-0 text-white  hover:bg-white hover:text-gray-700 hover:duration-150 hover:border-gray-700">
+            <div
+              className=""
+              style={
+                isOnline
+                  ? { backgroundColor: "lightgreen" }
+                  : { backgroundColor: "gray" }
+              }
+            ></div>
+            <button className="w-20" onClick={handleLogin}>
+              {isLogged ? "Logout" : "Login"}
+            </button>
+          </li>
+        </ul>
       </div>
     </div>
   );
