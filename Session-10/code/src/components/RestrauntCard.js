@@ -12,8 +12,8 @@ const RestrauntCard = ({
   avgRating,
 }) => {
   return (
-    <div className=" p-2 w-72 h-96 border-transparent  hover:shadow-md hover:shadow-gray-400 transition duration-0 hover:duration-450 ">
-      <div className="">
+    <div className=" p-4 w-80 ">
+      <div>
         <img src={IMAGE_CDN_URL + cloudinaryImageId} />
         <div className="pt-3 text-lg font-bold">{name}</div>
         <p className="text-lg text-gray-900 py-3">{cuisines.join(", ")}</p>

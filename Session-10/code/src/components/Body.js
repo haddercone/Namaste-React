@@ -21,7 +21,7 @@ const Body = () => {
         <Shimmer />
       ) : (
         <div>
-          <div className="m-auto w-4/5 flex flex-wrap gap-5 justify-center">
+          <div className="m-auto w-4/5 flex flex-wrap gap-6 justify-between">
             {restaurants.length == 0 ? (
               <p className="text-center w-full text-3xl">
                 No restaurant found...
@@ -30,10 +30,12 @@ const Body = () => {
               restaurants.map((restaurant) => {
                 return (
                   <Link
-                    to={"/restaurant/" + restaurant.data.id}
                     key={restaurant.data.id}
+                    to={"/restaurant/" + restaurant.data.id}
                   >
-                    <RestrauntCard {...restaurant.data} />
+                    <div className="border-transparent h-full hover:shadow-md hover:shadow-gray-400 transition duration-0 hover:duration-450">
+                      <RestrauntCard {...restaurant.data} />
+                    </div>
                   </Link>
                 );
               })
