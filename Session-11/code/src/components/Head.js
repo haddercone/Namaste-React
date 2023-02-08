@@ -14,10 +14,10 @@ const Head = () => {
 
   return (
     <div className="sticky top-0 bg-white z-10 shadow-md">
-      <div className="p-3  w-4/5 m-auto flex justify-between items-center">
+      <div className="p-3 w-full m-0 md:m-auto md:w-4/5  flex justify-between items-center">
         <Title />
 
-        <ul className="h-full flex justify-between gap-5 text-xl">
+        <ul className="fixed bottom-0 flex p-2  justify-around bg-white left-0 w-full md:block md:flex md:justify-between md:gap-5 md:text-xl md:static md:w-auto ">
           <Link to="/">
             <li className="px-3 py-2">Home</li>
           </Link>
@@ -50,7 +50,7 @@ const Head = () => {
                   : { backgroundColor: "gray" }
               }
             ></div>
-            <button className="w-20" onClick={handleLogin}>
+            <button className="w-auto " onClick={handleLogin}>
               {isLogged ? "Logout" : "Login"}
             </button>
           </li>

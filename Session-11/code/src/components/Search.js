@@ -22,15 +22,17 @@ const Search = ({ restaurants, actualData, setRestaurants }) => {
     };
   }, [searchText]);
   return (
-    <div className="w-4/5 m-auto py-3 flex justify-between items-center ">
-      <p className="text-2xl">{restaurants.length} restaurants</p>
+    <div className="w-full m-0 md:w-4/5 md:m-auto py-3 flex justify-between items-center ">
+      {/* <p className="text-2xl hidden lg:contents">
+        {restaurants.length} restaurants
+      </p> */}
       <form
-        className="w-1/2 px-3 py-2 text-xl relative "
+        className="text-center w-full px-3 py-2 text-xl relative "
         onSubmit={(e) => e.preventDefault()}
       >
         <input
           type="text"
-          className="p-2 border-2 w-4/5 border-gray-500 outline-none  border-r-0 "
+          className="p-2 border-2 w-3/5 md:w-1/2 border-gray-500 outline-none  md:border-r-0 "
           placeholder="Search restaurants.."
           autoFocus={true}
           onChange={(e) => {
@@ -48,7 +50,7 @@ const Search = ({ restaurants, actualData, setRestaurants }) => {
         >
           Search
         </button>
-        <div className="absolute w-3/4 shadow-md bg-white ">
+        <div className="absolute md:w-3/4 w-4/5 left-9 shadow-md bg-white ">
           {names.map((res) => {
             return (
               <button

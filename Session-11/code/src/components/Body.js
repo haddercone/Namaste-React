@@ -21,7 +21,7 @@ const Body = () => {
         <Shimmer />
       ) : (
         <div>
-          <div className="m-auto w-4/5 flex flex-wrap gap-6 justify-between">
+          <div className="m-0 w-full md:m-auto md:w-4/5 flex flex-wrap gap-6 justify-center">
             {restaurants.length == 0 ? (
               <p className="text-center w-full text-3xl">
                 No restaurant found...
