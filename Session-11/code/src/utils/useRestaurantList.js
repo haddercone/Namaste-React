@@ -3,7 +3,7 @@ import { SWIGGY_RESTAURANT_CDN_URL } from "../config";
 
 const useRestaurantList = () => {
   const [restaurants, setRestaurants] = useState([]);
-  const [actualData, setActualData] = useState({});
+  const [actualData, setActualData] = useState([]);
   const [crouselCards, setCrouselCards] = useState([]);
   const [isLoaded, setIsLoaded] = useState(false);
 
