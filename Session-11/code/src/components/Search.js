@@ -31,12 +31,12 @@ const Search = ({ restaurants, actualData, setRestaurants }) => {
           Find restaurants near you..
         </h1>
         <form
-          className=" md:text-center w-full px-3 py-2 text-xl relative "
+          className=" md:text-right w-full px-3 py-2 text-xl relative "
           onSubmit={(e) => e.preventDefault()}
         >
           <input
             type="text"
-            className="p-2 border-2 w-3/5 md:w-1/2 border-gray-500 outline-none  md:border-r-0 "
+            className="p-2 border-2 w-4/6 md:w-4/6 border-gray-500 outline-none  md:border-r-0 "
             placeholder="Search restaurants.."
             autoFocus={true}
             onChange={(e) => {
@@ -54,7 +54,7 @@ const Search = ({ restaurants, actualData, setRestaurants }) => {
           >
             Search
           </button>
-          <div className="absolute md:w-1/2 md:px-0 md:translate-x-[31%] w-4/5 left-2 md:left-9  shadow-md bg-white ">
+          <div className="mt-2 absolute md:w-1/2 md:px-0 md:translate-x-[31%] w-3/4 left-2 md:left-[20%]  shadow-md bg-white ">
             {names.map((res) => {
               return (
                 <button
