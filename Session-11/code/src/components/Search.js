@@ -22,52 +22,56 @@ const Search = ({ restaurants, actualData, setRestaurants }) => {
     };
   }, [searchText]);
   return (
-    <div className="w-full m-0 md:w-4/5 md:m-auto py-3 flex justify-between items-center ">
-      {/* <p className="text-2xl hidden lg:contents">
-        {restaurants.length} restaurants
-      </p> */}
-      <form
-        className="text-center w-full px-3 py-2 text-xl relative "
-        onSubmit={(e) => e.preventDefault()}
-      >
-        <input
-          type="text"
-          className="p-2 border-2 w-3/5 md:w-1/2 border-gray-500 outline-none  md:border-r-0 "
-          placeholder="Search restaurants.."
-          autoFocus={true}
-          onChange={(e) => {
-            setSearchText(e.target.value);
-          }}
-          value={searchText}
-        />
-        <button
-          className="px-3 py-2 border-2  border-gray-500 bg-gray-700 text-white hover:bg-white hover:text-black "
-          onClick={() => {
-            const data = filteredRestaurants(searchText, actualData);
-            console.log("filter: ", data);
-            setRestaurants(data);
-          }}
+    <div className="bg-search-bg bg-cover">
+      <div className="w-full m-0 md:w-4/5 md:m-auto py-3 flex h-64 justify-evenly items-center flex-col md:flex-row">
+        {/* <p className="text-2xl hidden lg:contents">
+          {restaurants.length} restaurants
+        </p> */}
+        <h1 className="w-full pl-3 font-bold text-5xl text-white">
+          Find restaurants near you..
+        </h1>
+        <form
+          className=" md:text-center w-full px-3 py-2 text-xl relative "
+          onSubmit={(e) => e.preventDefault()}
         >
-          Search
-        </button>
-        <div className="absolute md:w-3/4 w-4/5 left-9 shadow-md bg-white ">
-          {names.map((res) => {
-            return (
-              <button
-                className="w-full text-left p-2 hover:bg-gray-200"
-                key={res.data.id}
-                onClick={() => {
-                  setSearchText(res.data.name);
-                  setNames([]);
-                  setRestaurants([].concat(res));
-                }}
-              >
-                {!res.data.name ? "" : res.data.name}
-              </button>
-            );
-          })}
-        </div>
-        {/* <input
+          <input
+            type="text"
+            className="p-2 border-2 w-3/5 md:w-1/2 border-gray-500 outline-none  md:border-r-0 "
+            placeholder="Search restaurants.."
+            autoFocus={true}
+            onChange={(e) => {
+              setSearchText(e.target.value);
+            }}
+            value={searchText}
+          />
+          <button
+            className="px-3 py-2 border-2  border-gray-500 bg-gray-700 text-white hover:bg-white hover:text-black "
+            onClick={() => {
+              const data = filteredRestaurants(searchText, actualData);
+              console.log("filter: ", data);
+              setRestaurants(data);
+            }}
+          >
+            Search
+          </button>
+          <div className="absolute md:w-1/2 md:px-0 md:translate-x-[31%] w-4/5 left-2 md:left-9  shadow-md bg-white ">
+            {names.map((res) => {
+              return (
+                <button
+                  className="w-full text-left p-2 hover:bg-gray-200"
+                  key={res.data.id}
+                  onClick={() => {
+                    setSearchText(res.data.name);
+                    setNames([]);
+                    setRestaurants([].concat(res));
+                  }}
+                >
+                  {!res.data.name ? "" : res.data.name}
+                </button>
+              );
+            })}
+          </div>
+          {/* <input
           type="text"
           value={user.name}
           onChange={(e) =>
@@ -87,7 +91,8 @@ const Search = ({ restaurants, actualData, setRestaurants }) => {
             })
           }
         /> */}
-      </form>
+        </form>
+      </div>
     </div>
   );
 };
