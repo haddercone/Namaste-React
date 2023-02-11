@@ -22,7 +22,7 @@ const Search = ({ restaurants, actualData, setRestaurants }) => {
     };
   }, [searchText]);
   return (
-    <div className="bg-search-bg bg-cover">
+    <div className="bg-search-bg bg-cover mb-5">
       <div className="w-full m-0 md:w-4/5 md:m-auto py-3 flex h-64 justify-evenly items-center flex-col md:flex-row">
         {/* <p className="text-2xl hidden lg:contents">
           {restaurants.length} restaurants
