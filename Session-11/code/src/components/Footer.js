@@ -1,7 +1,16 @@
 const Footer = () => {
   return (
-    <footer className="md:m-auto md:w-4/5 mb-20 p-2">
-      <p className="footer">Footer</p>
+    <footer className="mt-5 bg-gray-700 text-white">
+      <p className="text-xl text-center p-10 ">
+        Designed and developed By{" "}
+        <a
+          className="font-bold"
+          href="https://www.github.com/haddercone"
+          target="_blank"
+        >
+          Robin Singh
+        </a>
+      </p>
     </footer>
   );
 };

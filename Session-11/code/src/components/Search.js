@@ -8,7 +8,7 @@ const Search = ({ restaurants, actualData, setRestaurants }) => {
   // const { user, setUser } = useContext(UserContext);
   const [names, setNames] = useState([]);
   useEffect(() => {
-    let timer = setTimeout(() => {
+    const timer = setTimeout(() => {
       if (searchText === "") {
         setNames([]);
         return;
@@ -54,16 +54,16 @@ const Search = ({ restaurants, actualData, setRestaurants }) => {
           >
             Search
           </button>
-          <div className="mt-2 absolute md:w-1/2 md:px-0 md:translate-x-[31%] w-3/4 left-2 md:left-[20%]  shadow-md bg-white ">
+          <div>
             {names.map((res) => {
               return (
                 <button
                   className="w-full text-left p-2 hover:bg-gray-200"
                   key={res.data.id}
                   onClick={() => {
-                    setSearchText(res.data.name);
-                    setNames([]);
-                    setRestaurants([].concat(res));
+                    // setSearchText(res.data.name);
+                    // setNames([]);
+                    // setRestaurants([].concat(res));
                   }}
                 >
                   {!res.data.name ? "" : res.data.name}
