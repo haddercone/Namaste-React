@@ -5,11 +5,10 @@ import { addItem, removeItem, clearCart } from "../utils/cartSlice";
 const Cart = () => {
   const cartItems = useSelector((store) => store.cart.items);
   const dispatch = useDispatch();
-  // TODO
   const remove = (item) => {
     dispatch(removeItem(item));
   };
-  console.log(cartItems);
+  // console.log(cartItems);
   return (
     <>
       <div className="my-5 w-4/5 m-auto">
@@ -37,7 +36,6 @@ const Cart = () => {
                 <div className="flex justify-between">
                   Rs. {item?.price / 100}{" "}
                   <button onClick={() => remove(item)}>Remove</button>{" "}
-                  {/** TODO */}
                 </div>
               </div>
             );
