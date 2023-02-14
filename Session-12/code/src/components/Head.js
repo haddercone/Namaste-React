@@ -40,7 +40,7 @@ const Head = () => {
           <Link to="/cart">
             <li className="px-3 py-2  text-gray-700 relative text-2xl">
               <FontAwesomeIcon icon={faCartShopping} />
-              <span className="absolute text-sm bg-green-500 px-1 right-1 top-[-1px] rounded-full">
+              <span className="absolute text-sm font-bold text-white bg-green-500 px-1 right-1 top-[-1px] rounded-full">
                 {cartItems.length}
               </span>
             </li>
