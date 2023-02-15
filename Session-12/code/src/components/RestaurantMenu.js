@@ -20,7 +20,6 @@ const RestaurantMenu = () => {
   const handleAdditems = (item) => {
     dispatch(addItem(item));
   };
-
   if (!res) return null;
 
   return !isLoaded ? (
@@ -41,15 +40,15 @@ const RestaurantMenu = () => {
             <div className="text-3xl pb-2">{res?.name}</div>
             <div className="text-xl pb-2">{res?.cuisines.join(",")}</div>
             <div className="pb-2">{res?.locality}</div>
-            <div className="flex gap-5">
-              <div>
+            <div className="flex gap-2 ">
+              <div className="border-r-2 p-2">
                 <FontAwesomeIcon icon={faStar} /> {res?.avgRatingString}
               </div>
-              <div>
+              <div className="border-r-2 p-2">
                 {" "}
                 <FontAwesomeIcon icon={faStopwatch} /> {res?.sla?.slaString}
               </div>
-              <div>
+              <div className=" p-2">
                 <FontAwesomeIcon icon={faMoneyBill} /> {res?.costForTwoMsg}
               </div>
             </div>
@@ -83,9 +82,9 @@ const RestaurantMenu = () => {
                   <p className="pb-2">{item?.description}</p>
                   <button
                     onClick={() => handleAdditems(item)}
-                    className="border-2 border-white bg-green-500 px-3 py-2 "
+                    className="border-2 text-white border-white bg-gray-900 px-3 py-2 "
                   >
-                    Add to cart
+                    + Add to cart
                   </button>
                 </div>
                 <div className="">

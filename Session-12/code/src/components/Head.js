@@ -15,7 +15,7 @@ const Head = () => {
   const cartItems = useSelector((store) => store.cart.items);
 
   return (
-    <div className="sticky top-0 bg-white z-10 shadow-md">
+    <header className="sticky top-0 bg-white z-10 shadow-md">
       <div className="p-3 w-full m-0 md:m-auto md:w-4/5  flex justify-between items-center">
         <Title />
 
@@ -40,7 +40,7 @@ const Head = () => {
           <Link to="/cart">
             <li className="px-3 py-2  text-gray-700 relative text-2xl">
               <FontAwesomeIcon icon={faCartShopping} />
-              <span className="absolute text-sm font-bold text-white bg-green-500 px-1 right-1 top-[-1px] rounded-full">
+              <span className="absolute text-sm font-bold text-white bg-gray-500 px-1 right-1 top-[-1px] rounded-full">
                 {cartItems.length}
               </span>
             </li>
@@ -62,7 +62,7 @@ const Head = () => {
           {/* <p className="text-xl">{user.name}</p> */}
         </ul>
       </div>
-    </div>
+    </header>
   );
 };
 

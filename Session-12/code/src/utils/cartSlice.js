@@ -12,8 +12,12 @@ const cartSlice = createSlice({
       );
       if (cartItem) {
         cartItem.itemCount++;
+        cartItem.isAddedToCart = true;
       } else {
-        state.items.push({ ...action.payload, itemCount: 1 });
+        state.items.push({
+          ...action.payload,
+          itemCount: 1,
+        });
       }
     },
     incrementItem: (state, action) => {
