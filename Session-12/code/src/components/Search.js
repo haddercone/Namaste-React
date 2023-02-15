@@ -54,16 +54,16 @@ const Search = ({ restaurants, actualData, setRestaurants }) => {
           >
             Search
           </button>
-          <div>
+          <div className="bg-white absolute">
             {names.map((res) => {
               return (
                 <button
                   className="w-full text-left p-2 hover:bg-gray-200"
                   key={res.data.id}
                   onClick={() => {
-                    // setSearchText(res.data.name);
-                    // setNames([]);
-                    // setRestaurants([].concat(res));
+                    setSearchText(res.data.name);
+                    setNames([]);
+                    setRestaurants([].concat(res));
                   }}
                 >
                   {!res.data.name ? "" : res.data.name}
