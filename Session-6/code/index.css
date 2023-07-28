@@ -20,7 +20,7 @@ body{
     display: flex;
     background-color: var(--primary-color);
     color: #fff;
-    padding:1.2rem;
+    padding:1.4rem;
     justify-content: space-between;
 }
 .nav-items ul{
