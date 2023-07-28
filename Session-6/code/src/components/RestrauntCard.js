@@ -1,13 +1,13 @@
 import { IMAGE_CDN_URL } from "../config";
 
 const RestrauntCard = ({
-  name,
   cloudinaryImageId,
-  area,
-  cuisines,
-  lastMileTravelString,
-  costForTwoString,
-  avgRating,
+    name,
+    avgRating,
+    cuisines,
+    costForTwo,
+    deliveryTime,
+
 }) => {
   return (
     <div className="card-details">
@@ -30,8 +30,8 @@ const RestrauntCard = ({
           >
             {avgRating}
           </small>
-          <small>{lastMileTravelString}</small>{" "}
-          <small>{costForTwoString}</small>
+          <small>{costForTwo}</small>{" "}
+          <small>{deliveryTime}</small>
         </p>
       </div>
     </div>

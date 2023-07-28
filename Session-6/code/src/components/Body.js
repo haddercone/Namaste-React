@@ -5,7 +5,7 @@ import Shimmer from "./Shimmer";
 import { IMAGE_CDN_URL } from "../config";
 function filteredRestaurants(searchText, actualData) {
   const data = actualData.filter((restaurant) => {
-    return restaurant.data.name
+    return restaurant.info.name
       .toLowerCase()
       .includes(searchText.toLowerCase());
   });
@@ -26,10 +26,10 @@ const Body = () => {
         "https://www.swiggy.com/dapi/restaurants/list/v5?lat=27.8973944&lng=78.0880129&page_type=DESKTOP_WEB_LISTING"
       );
       const json = await data.json();
-      setRestaurants(json?.data?.cards[2]?.data?.data?.cards);
-      setCrouselCards(json?.data?.cards[0]?.data?.data?.cards);
+      setRestaurants(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
+      setCrouselCards(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
       setIsLoaded(true);
-      setActualData(json?.data?.cards[2]?.data?.data?.cards);
+      setActualData(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
     } catch (error) {
       console.log(error);
     }
@@ -95,8 +95,8 @@ const Body = () => {
               restaurants.map((restaurant) => {
                 return (
                   <RestrauntCard
-                    {...restaurant.data}
-                    key={restaurant.data.id}
+                    {...restaurant?.info}
+                    key={restaurant?.info?.id}
                   />
                 );
               })
