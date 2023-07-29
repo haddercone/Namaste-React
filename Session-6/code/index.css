@@ -20,7 +20,7 @@ body{
     display: flex;
     background-color: var(--primary-color);
     color: #fff;
-    padding:1.2rem;
+    padding:1.4rem;
     justify-content: space-between;
 }
 .nav-items ul{
@@ -28,7 +28,7 @@ body{
     gap: 2rem;
     align-items: center;
     padding: 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 .nav-items ul li{
 
