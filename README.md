@@ -1,6 +1,6 @@
 # Namaste-React
 
-## this repository is of Namaste React Live Course By Akshay Saini
+## This repository is of Namaste React Live Course By Akshay Saini
 
 >### Note: Hit swiggy API without getting CORS issues [here](https://github.com/haddercone/food-villa-server)
 
